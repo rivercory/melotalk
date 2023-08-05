@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar bg-body-tertiary" aria-label="Light offcanvas navbar">
+  <nav class="navbar" aria-label="Light offcanvas navbar">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">{{ title }}</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarLight" aria-controls="offcanvasNavbarLight" aria-label="Toggle navigation">
@@ -49,3 +49,13 @@ export default {
   }
 }
 </script>
+
+<style>
+.navbar {
+  padding: 1rem;
+}
+
+.navbar-brand {
+  font-family: NanumSquareNeo-Variable;
+}
+</style>

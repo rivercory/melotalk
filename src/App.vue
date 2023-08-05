@@ -3,6 +3,8 @@
 </template>
 
 <style>
+@import "assets/font.css";
+
 .if-desktop {
   display: block;
 }

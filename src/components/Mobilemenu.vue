@@ -24,7 +24,7 @@
   bottom: 0px;
   left: 0px;
   width: 100%;
-  height: 50px;
+  height: auto;
   z-index: 100;
   border-top: 1px solid black;
   background-color: white
@@ -35,7 +35,7 @@
   width: 20%;
   height: 100%;
   text-align: center;
-  padding-top: 13px;
+  padding: 1rem;
 }
 </style>
 
