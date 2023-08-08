@@ -1,12 +1,12 @@
 <template>
-  <div class="if-desktop">
+  <div class="if-desktop" style="height: auto;">
     <Navmenu firsttitle="멜로" secondtitle="톡" />
   </div>
   <div class="d-flex flex-nowrap gap-3" style="margin: 1rem;">
-      <div class="rounded-3" style="background-color: #edf2ff; height: auto; flex: 1;">
+      <div class="rounded-3 side" style="background-color: #edf2ff; height: 10vh; flex: 1; position: sticky; top: 0;">
       </div>
-      <div class="rounded-3 gap-3" style="background-color: #edf2ff; padding: 1rem; height: auto; flex: 3;">
-        <div class="container text-center">
+      <div class="rounded-3 gap-3" style="background-color: #edf2ff; padding: 1rem; position: sticky; top: 0; height: 150vh; flex: 3;">
+        <div class="text-center" style="margin: 0.5rem;">
             <div class="row justify-content-between">
               <div class="col-1">
                 <h4 style="font-weight: bold; font-family: NanumSquareNeo-Variable; color: #364fc7;">채팅</h4>
@@ -20,8 +20,9 @@
               </div>
             </div>
         </div>
+        <textarea class="rounded-2 border" style="border: 0; resize: none; width: 100%; height: 20vh;" />
       </div>
-      <div class="rounded-3" style="background-color: #edf2ff; height: auto; flex: 1;">
+      <div class="rounded-3" style="background-color: #edf2ff; height: 10vh; flex: 1; position: sticky; top: 0;">
       </div>
   </div>
   <div class="if-mobile">
@@ -29,12 +30,17 @@
   </div>
 </template>
 
+<style>
+</style>
+
 <script>
 import {defineComponent} from "vue";
 import Navmenu from "@/components/Navmenu.vue";
 import Mobilemenu from "@/components/Mobilemenu.vue";
 
 export default defineComponent({
-  components: {Mobilemenu, Navmenu}
+  components: {Mobilemenu, Navmenu},
+  mounted() {
+  }
 })
 </script>

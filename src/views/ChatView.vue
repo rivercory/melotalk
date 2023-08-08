@@ -4,7 +4,7 @@
 
 <template>
   <p align="middle">
-    <div class="rounded-3 gap-3" style="background-color: #edf2ff; padding: 1rem; margin: 1rem; height: auto; width: 60vw;">
+    <div class="rounded-3 gap-3" style="background-color: #dbe4ff; padding: 1rem; margin: 1rem; height: auto; width: 60vw;">
       <div class="container text-center">
         <div class="row justify-content-between">
           <div class="col-1">
