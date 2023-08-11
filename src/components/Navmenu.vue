@@ -2,11 +2,11 @@
   <nav class="navbar border rounded-3" aria-label="Light offcanvas navbar">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <img src="../assets/melotalk_transparent.svg" width="40" height="40" style="margin-right: 0.5rem;" />
-        <span style="color: #4C6EF5">
+        <img src="../assets/melotalk_transparent.svg" width="44" height="44" style="margin-right: 0.5rem;" />
+        <span style="color: #4C6EF5;">
         {{ firsttitle }}
         </span>
-        <span style="color:#91A7FF;">
+        <span style="color: #91A7FF;">
         {{ secondtitle }}
         </span>
       </a>
@@ -69,7 +69,8 @@ export default {
 }
 
 .navbar-brand {
-  font-family: NanumSquareNeo-Variable;
+  font-family: IBMPlexSansKR-Regular;
+  font-size: 1.4rem;
 }
 
 .navbar-toggler {
