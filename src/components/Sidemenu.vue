@@ -6,7 +6,7 @@ export default {
 
 <template>
   <main class="d-flex flex-nowrap">
-    <div class="d-flex flex-column flex-shrink-0 bg-body-tertiary" style="width: 4.5rem;">
+    <div class="d-flex flex-column flex-shrink-0 rounded-3 border" style="width: 4.5rem; margin-left: 1rem; margin-top: 1rem; margin-bottom: 1rem;">
       <a href="/" class="d-block p-3 link-body-emphasis text-decoration-none" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Icon-only">
         <svg class="bi pe-none" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
         <span class="visually-hidden">Icon-only</span>

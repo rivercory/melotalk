@@ -1,16 +1,13 @@
 <template>
-  <div class="if-desktop">
   <div class="d-flex flex-nowrap">
+    <div class="if-desktop">
     <div style="flex: 1;">
       <Sidemenu/>
     </div>
-    <div style="flex: 5;">
+    </div>
+    <div style="flex: 9;">
       <Navmenu firsttitle="홈"/>
     </div>
-  </div>
-  </div>
-  <div class="if-mobile">
-    <Navmenu firsttitle="홈"/>
   </div>
 </template>
 
