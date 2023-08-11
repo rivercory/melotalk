@@ -5,12 +5,12 @@
       <Sidemenu/>
     </div>
     <div style="flex: 5;">
-      <Navmenu/>
+      <Navmenu firsttitle="홈"/>
     </div>
   </div>
   </div>
   <div class="if-mobile">
-    <Navmenu/>
+    <Navmenu firsttitle="홈"/>
   </div>
 </template>
 
