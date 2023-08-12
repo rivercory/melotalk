@@ -1,6 +1,10 @@
 <script>
 export default {
-  props: {}
+  props: {},
+  mounted() {
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+  }
 }
 </script>
 
@@ -8,12 +12,12 @@ export default {
   <main class="d-flex flex-nowrap">
     <div class="d-flex flex-column flex-shrink-0 rounded-3 border" style="width: 4.5rem; margin-left: 1rem; margin-top: 1rem; margin-bottom: 1rem;">
       <a href="/" class="d-block p-3 link-body-emphasis text-decoration-none" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Icon-only">
-        <svg class="bi pe-none" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        <img width="36" height="36" src="../assets/melotalk_transparent.svg">
         <span class="visually-hidden">Icon-only</span>
       </a>
       <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
         <li class="nav-item">
-          <a href="#" class="nav-link active py-3 border-bottom rounded-0" aria-current="page" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Home" data-bs-original-title="Home">
+          <a href="#" class="nav-link py-3 border-bottom rounded-0" aria-current="page" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Home" data-bs-original-title="Home">
             <svg class="bi pe-none" width="24" height="24" role="img" aria-label="Home"><use xlink:href="#home"></use></svg>
           </a>
         </li>

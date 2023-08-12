@@ -5,8 +5,8 @@
       <Sidemenu/>
     </div>
     </div>
-    <div style="flex: 9;">
-      <Navmenu firsttitle="홈"/>
+    <div style="flex: 7;">
+      <Navmenu title="홈"/>
     </div>
   </div>
 </template>
