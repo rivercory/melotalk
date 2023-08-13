@@ -56,7 +56,7 @@ export default {
 
 <style>
 .navbar {
-  padding: 0.2rem;
+  padding: 0.5rem;
   margin: 1rem;
   background: #748ffc;
 }

@@ -1,14 +1,8 @@
 <template>
-  <div class="d-flex flex-nowrap">
+  <Navmenu title="홈"/>
     <div class="if-desktop">
-    <div style="flex: 1;">
       <Sidemenu/>
     </div>
-    </div>
-    <div style="flex: 7;">
-      <Navmenu title="홈"/>
-    </div>
-  </div>
 </template>
 
 <style>
