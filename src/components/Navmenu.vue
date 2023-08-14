@@ -12,7 +12,7 @@
       </button>
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbarLight" aria-labelledby="offcanvasNavbarLightLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLightLabel">멜로톡</h5>
+          <h5 class="offcanvas-title" id="offcanvasNavbarLightLabel"><span style="color: #4C6EF5;">멜로</span>톡</h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
@@ -62,12 +62,17 @@ export default {
 }
 
 .navbar-brand {
-  font-family: SUIT-Regular;
+  font-family: NanumSquareNeo-Variable;
   font-size: 1.4rem;
   margin-left: 0.5rem;
 }
 
 .navbar-toggler {
   border: 0;
+}
+
+.offcanvas-title {
+  font-family: SUIT-Regular;
+  color: #91A7FF;
 }
 </style>

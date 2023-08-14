@@ -5,6 +5,9 @@
 <style>
 @import "assets/font.css";
 
+:root {
+}
+
 .if-desktop {
   display: block;
 }
