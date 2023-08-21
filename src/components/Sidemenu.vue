@@ -10,12 +10,20 @@ export default {
 
 <template>
   <main class="d-flex flex-nowrap">
-    <div class="d-flex flex-column flex-shrink-0 rounded-3 border" style="width: 17rem; margin-left: 1rem; margin-bottom: 1rem;">
+    <div class="d-flex flex-column flex-shrink-0 rounded-3" style="background-color: var(--sidebar-background-color); width: 17rem; margin-left: 1rem; margin-bottom: 1rem;">
     </div>
   </main>
 </template>
 
-<style scoped>
+<style>
+[data-theme="light"] {
+  --sidebar-background-color: #dee2e6;
+}
+
+[data-theme="dark"] {
+  --sidebar-background-color: #868e96;
+}
+
 main {
   max-height: 86vh;
   height: 86vh;

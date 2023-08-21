@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar border rounded-3" aria-label="Light offcanvas navbar">
+  <nav class="navbar rounded-3" aria-label="Light offcanvas navbar">
       <a class="navbar-brand" href="#">
         <span style="color: #FFFFFF;">
         {{ title }}
