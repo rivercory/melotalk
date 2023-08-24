@@ -17,14 +17,7 @@
 }
 </style>
 
-<script>
-import {defineComponent} from "vue";
+<script setup>
 import Navmenu from "@/components/Navmenu.vue";
 import Sidemenu from "@/components/Sidemenu.vue";
-
-export default defineComponent({
-  components: {Sidemenu, Navmenu},
-  mounted() {
-  }
-})
 </script>
