@@ -1,21 +1,23 @@
 <script setup>
-
+import Sidemenu from "@/components/Sidemenu.vue";
+import Navmenu from "@/components/Navmenu.vue";
 </script>
 
 <template>
-  <p align="middle">
-    <div class="rounded-3 gap-3" style="background-color: #748ffc; padding: 1rem; margin: 1rem; height: auto; width: 80vw;">
-      <div class="container text-center">
-        <div class="row justify-content-between">
-          <div class="col-1">
-            <h4 style="font-family: NanumSquareNeo-Variable; color: #FFFFFF;">채팅</h4>
-          </div>
-        </div>
-      </div>
+  <Navmenu title="채팅"/>
+  <div class="if-desktop d-flex flex-nowrap">
+    <Sidemenu/>
+    <div class="rounded-3" style="background-color: var(--content-background-color); margin-left: 1rem; margin-right: 1rem; margin-bottom: 1rem; padding: 1rem; width: 83rem;">
     </div>
-  </p>
+  </div>
 </template>
 
-<style scoped>
+<style>
+[data-theme="light"] {
+  --content-background-color: #dee2e6;
+}
 
+[data-theme="dark"] {
+  --content-background-color: #868e96;
+}
 </style>
