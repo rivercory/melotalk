@@ -33,6 +33,7 @@ export default {
 
 body,html {
   background-color: var(--background-color);
+  width: 100%;
 }
 
 [data-theme="light"] {
