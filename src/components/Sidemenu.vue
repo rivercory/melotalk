@@ -10,7 +10,7 @@ export default {
 
 <template>
   <main class="d-flex flex-nowrap">
-    <div class="d-flex flex-column flex-shrink-0 rounded-3" style="background-color: var(--sidebar-background-color); width: 17rem; margin-left: 1rem; margin-bottom: 1rem;">
+    <div class="d-flex flex-column flex-shrink-0" style="background-color: var(--sidebar-background-color); width: 17rem;">
     </div>
   </main>
 </template>
@@ -25,7 +25,7 @@ export default {
 }
 
 main {
-  max-height: 86vh;
-  height: 86vh;
+  max-height: 92vh;
+  height: 92vh;
 }
 </style>

@@ -2,6 +2,7 @@
 import { ref, onMounted } from 'vue'
 import { supabase } from '../lib/supabaseClient'
 import Navmenu from "@/components/Navmenu.vue";
+import Sidemenu from "@/components/Sidemenu.vue";
 
 const countries = ref([])
 
@@ -17,7 +18,7 @@ onMounted(() => {
 
 <template>
   <Navmenu title="소개"/>
-  <div style="margin: 1rem; padding: 1rem; width: 96%;">
+  <div style="padding: 1rem;">
     <ul>
       <li v-for="country in countries" :key="country.id">{{ country.name }}</li>
     </ul>
