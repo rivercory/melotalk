@@ -31,9 +31,26 @@ export default {
 <style>
 @import "assets/font.css";
 
+.if-desktop {
+  display: block;
+}
+
+.if-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .if-desktop {
+    display: none;
+  }
+
+  .if-mobile {
+    display: block;
+  }
+}
+
 body,html {
   background-color: var(--background-color);
-  width: 100%;
 }
 
 [data-theme="light"] {
@@ -53,23 +70,5 @@ body,html {
 
 .theme-toggle-icon {
   fill: var(--theme-toggle-icon-color);
-}
-
-.if-desktop {
-  display: block;
-}
-
-.if-mobile {
-  display: none;
-}
-
-@media screen and (max-width: 700px) {
-  .if-desktop {
-    display: none;
-  }
-
-  .if-mobile {
-    display: block;
-  }
 }
 </style>
