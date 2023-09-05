@@ -39,7 +39,7 @@ export default {
   display: none;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1000px) {
   .if-desktop {
     display: none;
   }
