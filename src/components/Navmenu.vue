@@ -27,6 +27,9 @@
           <li class="nav-item">
             <router-link to="about" class="nav-link">소개</router-link>
           </li>
+          <li class="nav-item">
+            <router-link to="chat" class="nav-link">채팅</router-link>
+          </li>
         </ul>
       </div>
     </div>

@@ -55,17 +55,23 @@ body,html {
 
 [data-theme="light"] {
   --background-color: #FFFFFF;
+  --border-color: #bac8ff;
   --theme-toggle-icon-color: #000000;
 }
 
 [data-theme="dark"] {
   --background-color: #212529;
+  --border-color: #FFFFFF;
   --theme-toggle-icon-color: #FFFFFF;
 }
 
 .theme-toggle {
   margin: 1rem;
   padding: 1rem;
+}
+
+.border {
+  border-color: var(--border-color) !important;
 }
 
 .theme-toggle-icon {
