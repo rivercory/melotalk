@@ -55,7 +55,7 @@ body,html {
 
 [data-theme="light"] {
   --background-color: #FFFFFF;
-  --border-color: #bac8ff;
+  --border-color: #ced4da;
   --theme-toggle-icon-color: #000000;
 }
 
