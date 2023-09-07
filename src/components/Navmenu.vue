@@ -23,19 +23,19 @@
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item">
             <router-link to="/" class="nav-link">
-              <img src="../assets/icons/home_FILL0_wght400_GRAD0_opsz40.svg" width="30" height="30" alt="home icon"/>
+              <img class="offcanvas-icon" src="../assets/icons/home_FILL0_wght400_GRAD0_opsz40.svg" width="30" height="30" alt="home icon"/>
               홈
             </router-link>
           </li>
           <li class="nav-item">
             <router-link to="about" class="nav-link">
-              <img src="../assets/icons/description_FILL0_wght400_GRAD0_opsz40.svg" width="27" height="27" alt="description icon"/>
+              <img class="offcanvas-icon" src="../assets/icons/description_FILL0_wght400_GRAD0_opsz40.svg" width="27" height="27" alt="description icon"/>
               소개
             </router-link>
           </li>
           <li class="nav-item">
             <router-link to="chat" class="nav-link">
-              <img src="../assets/icons/chat_bubble_FILL0_wght400_GRAD0_opsz40.svg" width="27" height="27"  alt="chat icon"/>
+              <img class="offcanvas-icon" src="../assets/icons/chat_bubble_FILL0_wght400_GRAD0_opsz40.svg" width="27" height="27"  alt="chat icon"/>
               채팅
             </router-link>
           </li>
@@ -68,9 +68,13 @@ export default {
   font-family: LINESeedKR-Bd;
 }
 
+.offcanvas-icon {
+  margin-right: 0.5rem;
+}
+
 .nav-item {
   font-family: SUIT-Regular;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 </style>
