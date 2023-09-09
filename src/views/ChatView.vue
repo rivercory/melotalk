@@ -17,7 +17,7 @@ onMounted(() => {
 
 <template>
   <Navmenu title="채팅"/>
-  <div class="d-flex flex-nowrap" style="height: 100vh;">
+  <div class="d-flex flex-nowrap">
     <div class="if-desktop" style="width: 25rem; padding-left: 1rem; padding-top: 1rem; padding-bottom: 1rem;">
       <div class="border rounded-2" style="padding: 1rem;">
         ㄴㄷㄱ
