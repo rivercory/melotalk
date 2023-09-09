@@ -1,5 +1,5 @@
 <template>
-  <header class="py-3 mb-3">
+  <header class="py-3">
     <div class="container-fluid d-grid align-items-center" style="grid-template-columns: 1fr 2fr;">
       <div>
         <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarLight"
