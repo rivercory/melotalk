@@ -64,9 +64,11 @@
       </div>
 
       <div class="d-flex align-items-center">
-        <form class="w-100 me-3" role="search">
+        <div class="w-100">
+        <form class="w-50 me-3" role="search">
           <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
         </form>
+        </div>
 
         <div class="flex-shrink-0 dropdown">
           <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle btn" data-bs-toggle="dropdown" aria-expanded="false">
