@@ -66,7 +66,7 @@
       <div class="d-flex align-items-center">
         <div class="w-100">
         <form class="w-50 me-3" role="search">
-          <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+          <input type="search" class="form-control if-desktop" placeholder="Search..." aria-label="Search">
         </form>
         </div>
 
