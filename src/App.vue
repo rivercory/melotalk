@@ -15,7 +15,7 @@
 
 @media screen and (max-width: 1000px) {
   .if-desktop {
-    display: none;
+    display: none!important;
   }
 
   .if-mobile {
