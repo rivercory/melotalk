@@ -28,12 +28,12 @@ body,html {
   width: 100%;
 }
 
-[color-theme="light"] {
+:root.lightmode {
   --background-color: #FFFFFF;
   --border-color: #ced4da;
 }
 
-[color-theme="dark"] {
+:root.darkmode {
   --background-color: #212529;
   --border-color: #adb5bd;
 }
