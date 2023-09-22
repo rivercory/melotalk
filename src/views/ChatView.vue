@@ -24,7 +24,7 @@ onMounted(() => {
       </div>
     </div>
     <div style="padding: 1rem; width: 100rem;">
-      <textarea class="border rounded-2" style="height: 10rem; width: 100%; resize: none; border: 0;"/>
+      <input class="border rounded-2" id="name" style="height: 10rem; width: 100%; resize: none; border: 0;"/>
       <button class="btn" style="float: right; margin-bottom: 1rem; background-color: #748ffc; font-weight: bold; font-family: NanumSquareNeo-Variable;">보내기</button>
       <div>
         <div class="rounded-2" style="background-color: #e9ecef; margin-bottom: 0.5rem; padding: 1rem; clear: both;"
@@ -34,6 +34,7 @@ onMounted(() => {
     </div>
   </div>
 </template>
+
 
 <style>
 </style>

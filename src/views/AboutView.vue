@@ -1,7 +1,15 @@
-<script setup>
-import Navmenu from "@/components/Navmenu.vue";
+<script>
+export default {
+  methods: {
+    inputValueChange() {
+    var inputValue = document.getElementById('inputValue').value;
+    console.log(inputValue)
+  }
+  }
+}
 </script>
 
 <template>
-  <Navmenu title="소개"/>
+  <input type="text" name="inputValue" id="inputValue">
+  <button @click="inputValueChange">d</button>
 </template>
