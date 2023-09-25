@@ -8,7 +8,8 @@ const chat = ref([])
 
 async function getChat() {
   const {data} = await supabase.from('chat').select()
-  chat.value = data
+  const reverse = data.reverse();
+  chat.value = reverse
 }
 
 async function inputValueChange(){
