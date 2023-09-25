@@ -25,7 +25,6 @@
 
 body,html {
   background-color: var(--background-color);
-  width: 100%;
 }
 
 :root.lightmode {

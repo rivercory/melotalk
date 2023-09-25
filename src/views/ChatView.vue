@@ -3,15 +3,29 @@ import {ref, onMounted} from 'vue'
 import {supabase} from '../lib/supabaseClient'
 import Navmenu from "@/components/Navmenu.vue";
 
-const countries = ref([])
+const chat = ref([])
 
-async function getCountries() {
-  const {data} = await supabase.from('countries').select()
-  countries.value = data
+async function getChat() {
+  const {data} = await supabase.from('chat').select()
+  chat.value = data
+}
+
+async function inputValueChange(){
+  var inputValue = document.getElementById('inputValue').value;
+  const today = new Date();
+  const str = inputValue;
+  const strLength = str.length;
+  if (strLength <= 0) {
+    alert("문자를 입력해주세요!")
+  } else {
+    const { error } = await supabase
+        .from('chat')
+        .insert({ created_at: today.toLocaleString(), text: inputValue })
+  }
 }
 
 onMounted(() => {
-  getCountries()
+  getChat()
 })
 </script>
 
@@ -24,11 +38,11 @@ onMounted(() => {
       </div>
     </div>
     <div style="padding: 1rem; width: 100rem;">
-      <input class="border rounded-2" id="name" style="height: 10rem; width: 100%; resize: none; border: 0;"/>
-      <button class="btn" style="float: right; margin-bottom: 1rem; background-color: #748ffc; font-weight: bold; font-family: NanumSquareNeo-Variable;">보내기</button>
+      <textarea class="border rounded-2" name="inputValue" id="inputValue" style="height: 10rem; width: 100%; resize: none; border: 0;"/>
+      <button class="btn" @click="inputValueChange" style="float: right; margin-bottom: 1rem; background-color: #748ffc; font-weight: bold; font-family: NanumSquareNeo-Variable;">보내기</button>
       <div>
         <div class="rounded-2" style="background-color: #e9ecef; margin-bottom: 0.5rem; padding: 1rem; clear: both;"
-             v-for="country in countries" :key="country.id">{{ country.name }}
+             v-for="chat in chat" :key="chat.created_at">{{ chat.text }}
         </div>
       </div>
     </div>
