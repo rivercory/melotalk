@@ -2065,6 +2065,11 @@ babel-plugin-polyfill-regenerator@^0.5.1:
   dependencies:
     "@babel/helper-define-polyfill-provider" "^0.4.2"
 
+badwords-ko@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.npmjs.org/badwords-ko/-/badwords-ko-1.0.4.tgz"
+  integrity sha512-l2gJiVkIXd1nyyRI6aXEujq+aCiMfCyREUdK68mUnH6iZy8+mvXvkvOLO6Nv6MXiRKgvdUQEmSeuVno38MX+wA==
+
 balanced-match@^1.0.0:
   version "1.0.2"
   resolved "https://registry.npmjs.org/balanced-match/-/balanced-match-1.0.2.tgz"
