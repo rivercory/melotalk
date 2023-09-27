@@ -28,6 +28,10 @@ async function inputValueChange(){
   }
 }
 
+setTimeout(function() {
+  getChat()
+}, 100);
+
 onMounted(() => {
   getChat()
 })
