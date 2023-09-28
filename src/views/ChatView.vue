@@ -8,6 +8,7 @@ const chat = ref([]);
 
 async function getChat() {
   const {data} = await supabase.from("chat").select();
+
   const reverse = data.reverse();
   chat.value = reverse;
 }
@@ -18,6 +19,7 @@ async function inputValueChange() {
   const filter = new Filter();
   const str = inputValue;
   const strLength = str.length;
+
   if (strLength <= 0) {
     alert("문자를 입력해주세요!");
   } else {
@@ -25,7 +27,7 @@ async function inputValueChange() {
         .from("chat")
         .insert({
           created_at: today.toLocaleString(),
-          text: filter.clean(inputValue),
+          text: filter.clean(str),
         });
     getChat();
   }
@@ -51,10 +53,10 @@ onMounted(() => {
     </div>
     <div style="padding: 1rem; width: 100rem">
       <textarea
-          class="border rounded-2"
+          class="rounded-2"
           name="inputValue"
           id="inputValue"
-          style="height: 10rem; width: 100%; resize: none; border: 0"
+          style="height: 10rem; width: 100%; resize: none; border: 0; background-color: var(--chat-textarea-background-color); font-family: SUIT-Regular;"
       />
       <button
           class="btn"
@@ -73,8 +75,8 @@ onMounted(() => {
       </button>
       <div style="float: right;">
         <button class="btn" @click="getChat">
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
-               class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
+          <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27"
+               class="refresh-icon bi bi-arrow-clockwise" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z"/>
             <path
                 d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z"/>
@@ -106,15 +108,23 @@ onMounted(() => {
 <style>
 :root.lightmode {
   --chat-container-background-color: #e9ecef;
+  --chat-textarea-background-color: #e9ecef;
   --sidebar-background-color: #e9ecef;
+  --refresh-icon-color: #000000;
 }
 
 :root.darkmode {
   --chat-container-background-color: #868e96;
+  --chat-textarea-background-color: #495057;
   --sidebar-background-color: #868e96;
+  --refresh-icon-color: #FFFFFF;
 }
 
 .content {
   font-size: 1.3rem;
+}
+
+.refresh-icon {
+  fill: var(--refresh-icon-color);
 }
 </style>
