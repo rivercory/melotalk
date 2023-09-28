@@ -54,7 +54,7 @@ onMounted(() => {
         padding-left: 1rem;
         padding-top: 1rem;
         padding-bottom: 1rem;">
-      <div class="border rounded-2" style="padding: 1rem">추가예정 레이아</div>
+      <div class="rounded-2" style="padding: 1rem; background-color: var(--sidebar-background-color);">추가예정 레이아</div>
     </div>
     <div style="padding: 1rem; width: 100rem">
       <textarea
@@ -89,7 +89,7 @@ onMounted(() => {
         <div
           class="rounded-2"
           style="
-            background-color: #e9ecef;
+            background-color: var(--chat-container-background-color);
             margin-bottom: 0.5rem;
             padding: 1rem;
             clear: both;
@@ -108,6 +108,16 @@ onMounted(() => {
 </template>
 
 <style>
+:root.lightmode {
+  --chat-container-background-color: #e9ecef;
+  --sidebar-background-color: #e9ecef;
+}
+
+:root.darkmode {
+  --chat-container-background-color: #868e96;
+  --sidebar-background-color: #868e96;
+}
+
 .content {
     font-size: 1.2rem;
 }
