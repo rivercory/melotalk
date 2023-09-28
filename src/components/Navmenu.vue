@@ -269,7 +269,7 @@ export default {
     title: String,
   },
   mounted() {
-    if(window && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (window && window.matchMedia('(prefers-color-scheme: dark)').matches) {
       document.documentElement.classList.add("darkmode");
     } else {
       document.documentElement.classList.add("lightmode");
@@ -281,7 +281,7 @@ export default {
         console.log(window.matchMedia('(prefers-color-scheme: dark)').matches);
 
         if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-          if(document.documentElement.classList.contains('darkmode')) {
+          if (document.documentElement.classList.contains('darkmode')) {
             document.documentElement.classList.remove("darkmode");
             document.documentElement.classList.add("lightmode");
           } else {
@@ -289,7 +289,7 @@ export default {
             document.documentElement.classList.add("darkmode");
           }
         } else {
-          if(document.documentElement.classList.contains('lightmode')) {
+          if (document.documentElement.classList.contains('lightmode')) {
             document.documentElement.classList.remove("lightmode");
             document.documentElement.classList.add("darkmode");
           } else {
@@ -310,10 +310,12 @@ export default {
   --offcanvas-text-color: #000000;
   --offcanvas-background-color: #ffffff;
   --offcanvas-close-button-background-color: #ffffff;
+  --offcanvas-title-color: #364fc7;
   --theme-toggle-icon-color: #000000;
   --navbar-title-color: #000000;
   --navbar-toggle-icon-color: #000000;
   --navbar-search-area-color: #FFFFFF;
+  --navbar-background-color: #FFFFFF;
 }
 
 :root.darkmode {
@@ -321,14 +323,17 @@ export default {
   --offcanvas-text-color: #ffffff;
   --offcanvas-background-color: #343a40;
   --offcanvas-close-button-background-color: #adb5bd;
+  --offcanvas-title-color: #FFFFFF;
   --theme-toggle-icon-color: #ffffff;
   --navbar-title-color: #FFFFFF;
   --navbar-toggle-icon-color: #FFFFFF;
   --navbar-search-area-color: #adb5bd;
+  --navbar-background-color: #495057;
 }
 
 header {
   margin: 1rem;
+  background-color: var(--navbar-background-color);
 }
 
 .navbar-brand {
@@ -343,7 +348,7 @@ header {
 .offcanvas-title {
   font-family: NanumSquareNeo-Variable;
   font-weight: bold;
-  color: #748ffc;
+  color: var(--offcanvas-title-color);
 }
 
 .offcanvas-icon {
