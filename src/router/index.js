@@ -3,6 +3,8 @@ import HomeView from "@/views/HomeView.vue";
 import AboutView from "@/views/AboutView.vue";
 import ChatView from "@/views/ChatView.vue";
 import ChangelogView from "@/views/ChangelogView.vue";
+import SignupView from "@/views/SignupView.vue";
+import SigninView from "@/views/SigninView.vue";
 
 const routes = [
   {
@@ -24,6 +26,16 @@ const routes = [
     path: '/changelog',
     name: 'changelog',
     component: ChangelogView
+  },
+  {
+    path: '/signup',
+    name: 'signup',
+    component: SignupView
+  },
+  {
+    path: '/signin',
+    name: 'signin',
+    component: SigninView
   }
 ]
 
