@@ -2,7 +2,7 @@
   <header class="if-desktop py-3 shadow-sm rounded-2">
     <div
         class="container-fluid d-grid align-items-center"
-        style="grid-template-columns: 2fr 4fr"
+        style="grid-template-columns: 3fr 1fr"
     >
       <div>
         <button
@@ -122,7 +122,7 @@
 
       <div class="d-flex align-items-center">
         <div class="w-100">
-          <form class="w-50 me-3" role="search">
+          <form role="search">
             <input
                 type="search"
                 class="form-control"

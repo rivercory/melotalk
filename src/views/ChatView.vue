@@ -34,12 +34,13 @@ async function inputValueChange() {
 }
 
 onMounted(() => {
-  getChat();
+  getChat()
 });
 </script>
 
 <template>
   <Navmenu title="채팅"/>
+
   <div class="d-flex flex-nowrap">
     <div
         class="if-desktop"
@@ -56,7 +57,8 @@ onMounted(() => {
           class="rounded-2"
           name="inputValue"
           id="inputValue"
-          style="height: 10rem; width: 100%; resize: none; border: 0; background-color: var(--chat-textarea-background-color); font-family: SUIT-Regular;"
+          placeholder="아무 글자나 입력하세요..."
+          style="height: 10rem; width: 100%; resize: none; border: 0; color: var(--chat-textarea-foreground-color); background-color: var(--chat-textarea-background-color); font-family: SUIT-Regular;"
       />
       <button
           class="btn"
@@ -89,7 +91,7 @@ onMounted(() => {
             style="
             background-color: var(--chat-container-background-color);
             margin-bottom: 0.5rem;
-            padding: 1rem;
+            padding: 0.7rem;
             clear: both;
             font-family: Pretendard-Regular;
           "
@@ -109,6 +111,7 @@ onMounted(() => {
 :root.lightmode {
   --chat-container-background-color: #e9ecef;
   --chat-textarea-background-color: #e9ecef;
+  --chat-textarea-foreground-color: #000000;
   --sidebar-background-color: #e9ecef;
   --refresh-icon-color: #000000;
 }
@@ -116,6 +119,7 @@ onMounted(() => {
 :root.darkmode {
   --chat-container-background-color: #868e96;
   --chat-textarea-background-color: #495057;
+  --chat-textarea-foreground-color: #FFFFFF;
   --sidebar-background-color: #868e96;
   --refresh-icon-color: #FFFFFF;
 }
@@ -126,5 +130,19 @@ onMounted(() => {
 
 .refresh-icon {
   fill: var(--refresh-icon-color);
+}
+
+#inputValue {
+  height: 10rem;
+  width: 100%;
+  resize: none;
+  border: 0;
+  color: var(--chat-textarea-foreground-color);
+  background-color: var(--chat-textarea-background-color);
+  font-family: SUIT-Regular;
+}
+
+#inputValue::placeholder {
+  color: var(--chat-textarea-foreground-color);
 }
 </style>
