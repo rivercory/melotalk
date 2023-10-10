@@ -20,6 +20,8 @@ async function inputValueChange() {
   const str = inputValue;
   const strLength = str.length;
 
+  filter.addWords("fuck", "shit");
+
   if (strLength <= 0) {
     alert("문자를 입력해주세요!");
   } else {
