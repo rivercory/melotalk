@@ -16,11 +16,12 @@ const App = () => {
   } = theme.useToken();
   return (
     <Layout>
-      <Sider style={{ padding: '1rem' }} trigger={null} collapsible collapsed={collapsed}>
+      <Sider style={{ padding: '1rem', background: '#FFFFFF' }} trigger={null} collapsible collapsed={collapsed}>
         <div className="demo-logo-vertical" />
         <Menu
-          theme="dark"
+          theme="light"
           mode="inline"
+          style={{ border: '0' }}
           defaultSelectedKeys={['1']}
           items={[
             {
