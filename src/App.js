@@ -1,23 +1,24 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
+import Router from "./router";
+import transparenticon from './icons/melotalk_transparent.svg';
 import {
-  MenuFoldOutlined,
-  MenuUnfoldOutlined,
   UploadOutlined,
   UserOutlined,
   VideoCameraOutlined,
 } from '@ant-design/icons';
-import { Layout, Menu, Button, theme } from 'antd';
-const { Header, Sider, Content } = Layout;
+import { Layout, Menu, theme } from 'antd';
+const { Sider, Content } = Layout;
 const App = () => {
-  const [collapsed, setCollapsed] = useState(false);
   const {
     token: { colorBgContainer },
   } = theme.useToken();
   return (
     <Layout>
-      <Sider style={{ padding: '1rem', background: '#FFFFFF' }} trigger={null} collapsible collapsed={collapsed}>
-        <div className="demo-logo-vertical" />
+      <Sider style={{ padding: '0.5rem', background: '#FFFFFF' }} >
+        <p align="middle">
+          <img src={transparenticon} width={56} height={56} alt='ㅙㅣㅅ' />
+        </p>
         <Menu
           theme="light"
           mode="inline"
@@ -43,31 +44,13 @@ const App = () => {
         />
       </Sider>
       <Layout style={{ height: '100vh' }}>
-        <Header
-          style={{
-            padding: 0,
-            background: colorBgContainer,
-          }}
-        >
-          <Button
-            type="text"
-            icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
-            onClick={() => setCollapsed(!collapsed)}
-            style={{
-              fontSize: '16px',
-              width: 64,
-              height: 64,
-            }}
-          />
-        </Header>
         <Content
           style={{
-            padding: 24,
-            minHeight: 280,
+            padding: 10,
             background: colorBgContainer,
           }}
         >
-          Content
+          <Router />
         </Content>
       </Layout>
     </Layout>
