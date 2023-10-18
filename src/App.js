@@ -1,59 +1,32 @@
 import React from 'react';
-import './App.css';
+import './css/App.css';
 import Router from "./router";
-import transparenticon from './icons/melotalk_transparent.svg';
-import {
-  UploadOutlined,
-  UserOutlined,
-  VideoCameraOutlined,
-} from '@ant-design/icons';
-import { Layout, Menu, theme } from 'antd';
-const { Sider, Content } = Layout;
+import { ChakraProvider, extendTheme } from '@chakra-ui/react'
+import transparenticon from './assets/icons/melotalk_transparent.svg';
+import NavBar from './components/navbar';
+
 const App = () => {
-  const {
-    token: { colorBgContainer },
-  } = theme.useToken();
+  const colors = {
+    primary: {
+      100: "#dbe4ff",
+      200: "#bac8ff",
+      300: "#91a7ff",
+      400: "#748ffc",
+      500: "#5c7cfa",
+      600: "#4c6ef5",
+      700: "#4263eb",
+      800: "#3b5bdb",
+      900: "#364fc7"
+    }
+  }
+
+  const theme = extendTheme({ colors })
+
   return (
-    <Layout>
-      <Sider style={{ padding: '0.5rem', background: '#FFFFFF' }} >
-        <p align="middle">
-          <img src={transparenticon} width={56} height={56} alt='ㅙㅣㅅ' />
-        </p>
-        <Menu
-          theme="light"
-          mode="inline"
-          style={{ border: '0' }}
-          defaultSelectedKeys={['1']}
-          items={[
-            {
-              key: '1',
-              icon: <UserOutlined />,
-              label: 'nav 1',
-            },
-            {
-              key: '2',
-              icon: <VideoCameraOutlined />,
-              label: 'nav 2',
-            },
-            {
-              key: '3',
-              icon: <UploadOutlined />,
-              label: 'nav 3',
-            },
-          ]}
-        />
-      </Sider>
-      <Layout style={{ height: '100vh' }}>
-        <Content
-          style={{
-            padding: 10,
-            background: colorBgContainer,
-          }}
-        >
-          <Router />
-        </Content>
-      </Layout>
-    </Layout>
+    <ChakraProvider theme={theme}>
+      <NavBar />
+      <Router />
+    </ChakraProvider>
   );
 };
 export default App;
