@@ -1,5 +1,7 @@
 import React from "react";
 import { Link, Box, Flex, Text, Button, Stack } from "@chakra-ui/react";
+import { IconContext } from "react-icons";
+import { BsList, BsX } from "react-icons/bs";
 
 import { ReactComponent as Logo } from "../assets/icons/melotalk_round.svg";
 
@@ -10,7 +12,7 @@ const NavBar = (props) => {
 
   return (
     <NavBarContainer {...props}>
-      <Logo width={50} height={50} />
+      <Logo width={46} height={46} />
       <MenuToggle toggle={toggle} isOpen={isOpen} />
       <MenuLinks isOpen={isOpen} />
     </NavBarContainer>
@@ -18,25 +20,15 @@ const NavBar = (props) => {
 };
 
 const CloseIcon = () => (
-  <svg width="36" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-    <title>Close</title>
-    <path
-      fill="black"
-      d="M9.00023 7.58599L13.9502 2.63599L15.3642 4.04999L10.4142 8.99999L15.3642 13.95L13.9502 15.364L9.00023 10.414L4.05023 15.364L2.63623 13.95L7.58623 8.99999L2.63623 4.04999L4.05023 2.63599L9.00023 7.58599Z"
-    />
-  </svg>
+  <IconContext.Provider value={{ size: 36 }}>
+    <BsX />
+  </IconContext.Provider>
 );
 
 const MenuIcon = () => (
-  <svg
-    width="36"
-    viewBox="0 0 20 20"
-    xmlns="http://www.w3.org/2000/svg"
-    fill="black"
-  >
-    <title>Menu</title>
-    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-  </svg>
+  <IconContext.Provider value={{ size: 36 }}>
+    <BsList />
+  </IconContext.Provider>
 );
 
 const MenuToggle = ({ toggle, isOpen }) => {
