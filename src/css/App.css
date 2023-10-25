@@ -1,4 +1,5 @@
 @import url('../assets/font.css');
+@import url('bootstrap/dist/css/bootstrap.min.css');
 
 body {
     margin: 0;

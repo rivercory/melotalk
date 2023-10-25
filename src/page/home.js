@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Button } from "@chakra-ui/react";
+import Button from 'react-bootstrap/Button';
 import '../css/home.css'
 
 const Home = () => {
@@ -10,7 +10,7 @@ const Home = () => {
                 <div>
                     <h1 style={{ fontSize: '5rem', fontFamily: 'Pretendard-Regular' }}>음악에 대해서 얘기해 봐요.</h1>
                     <Link to="/board">
-                        <Button style={{ fontFamily: 'SUITE-Regular' }} fontSize='28px' bg='#dbe4ff' borderColor='#bac8ff' color='#364fc7' variant='outline' size='lg'>
+                        <Button style={{ fontFamily: 'SUITE-Regular', fontSize: '28px', backgroundColor: '#364fc7', border: 0 }} size="lg">
                             시작하기
                         </Button>
                     </Link>
