@@ -13,7 +13,7 @@ function navbar() {
       {['md'].map((expand) => (
         <Navbar key={expand} expand={expand}>
           <Container fluid>
-            <Navbar.Brand href="#" style={{ fontFamily: 'Pretendard-Regular', color: '#364fc7' }}>멜로톡</Navbar.Brand>
+            <Navbar.Brand href="#" style={{ fontFamily: 'NanumSquareNeo-Variable', fontWeight: 'bold', color: '#364fc7' }}>멜로톡</Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
@@ -26,16 +26,16 @@ function navbar() {
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
-                <Nav className="flex-grow-1 pe-3">
-                  <Nav.Link href="#action1">Home</Nav.Link>
-                  <Nav.Link href="#action2">Link</Nav.Link>
+                <Nav className="flex-grow-1 pe-3 nanumgothic">
+                  <Nav.Link href="/">홈</Nav.Link>
+                  <Nav.Link href="/group">그룹</Nav.Link>
                   <NavDropdown
-                    title="Dropdown"
+                    title="내 정보"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
-                    <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
+                    <NavDropdown.Item href="#action3">내 그룹</NavDropdown.Item>
                     <NavDropdown.Item href="#action4">
-                      Another action
+                      회원정보 수정
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item href="#action5">

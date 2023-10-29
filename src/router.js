@@ -1,13 +1,13 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './page/home'
-import Board from './page/board';
+import Group from './page/group';
 
 const Router = () => {
     return (
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/board" element={<Board />} />
+                <Route path="/group" element={<Group />} />
             </Routes>
         </BrowserRouter>
     );
