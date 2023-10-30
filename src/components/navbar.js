@@ -1,10 +1,37 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 
-function navbar() {
+function Navbar() {
+  const localStorageCheker = (): boolean => {
+    if (!localStorage.theme) return false;
+    return localStorage.theme === 'dark' ? true : false;
+  };
+  const [dark, setDark] = useState(localStorageCheker());
+  const darkSetButton = () => {
+    setDark((state) => {
+      const update = !state;
+      if (update) {
+        localStorage.theme = 'dark';
+      } else {
+        localStorage.theme = 'light';
+      }
+      return update;
+    });
+  };
+
+  useEffect(() => {
+    if (
+      localStorage.theme === 'dark' ||
+      (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+    ) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  }, [dark]);
   return (
     <>
-      <div className="navbar bg-base-100">
+      <div className="navbar bg-base-100 dark:bg-slate-900">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost btn-circle">
@@ -23,8 +50,8 @@ function navbar() {
           </Link>
         </div>
         <div className="navbar-end">
-          <button className="btn btn-ghost btn-circle">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+          <button className="btn btn-ghost btn-circle" onClick={darkSetButton}>
+          {dark ? '현재 Dark모드' : '현재 light모드'}
           </button>
           <button className="btn btn-ghost btn-circle">
             <div className="indicator">
@@ -38,4 +65,4 @@ function navbar() {
   );
 }
 
-export default navbar;
+export default Navbar;
