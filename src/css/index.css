@@ -1,12 +1,10 @@
 @import url('../assets/font.css');
-@import url('bootstrap/dist/css/bootstrap.min.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body {
     margin: 0;
     height: 100%;
     width: 100%;
-}
-
-.if-mobile {
-    display: none;
 }

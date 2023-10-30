@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Button from 'react-bootstrap/Button';
 import '../css/home.css'
 
 const Home = () => {
@@ -10,9 +9,7 @@ const Home = () => {
                 <div>
                     <h1 style={{ fontSize: '5rem', fontFamily: 'Pretendard-Regular' }}>음악에 대해서 얘기해 봐요.</h1>
                     <Link to="/group">
-                        <Button style={{ fontFamily: 'SUITE-Regular', fontSize: '28px', backgroundColor: '#364fc7', border: 0 }} size="lg">
-                            시작하기
-                        </Button>
+                        <button class="btn btn-lg" style={{ fontFamily: 'Pretendard-Regular', fontSize: '2rem', backgroundColor: '#364FC7', color: '#FFFFFF' }}>시작하기</button>
                     </Link>
                 </div>
             </p>

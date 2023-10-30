@@ -1,62 +1,39 @@
 import React from "react";
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import Offcanvas from 'react-bootstrap/Offcanvas';
+import { Link } from 'react-router-dom';
 
 function navbar() {
   return (
     <>
-      {['md'].map((expand) => (
-        <Navbar key={expand} expand={expand}>
-          <Container fluid>
-            <Navbar.Brand href="#" style={{ fontFamily: 'NanumSquareNeo-Variable', fontWeight: 'bold', color: '#364fc7' }}>멜로톡</Navbar.Brand>
-            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
-            <Navbar.Offcanvas
-              id={`offcanvasNavbar-expand-${expand}`}
-              aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
-              placement="end"
-            >
-              <Offcanvas.Header closeButton>
-                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                  멜로톡
-                </Offcanvas.Title>
-              </Offcanvas.Header>
-              <Offcanvas.Body>
-                <Nav className="flex-grow-1 pe-3 nanumgothic">
-                  <Nav.Link href="/">홈</Nav.Link>
-                  <Nav.Link href="/group">그룹</Nav.Link>
-                  <NavDropdown
-                    title="내 정보"
-                    id={`offcanvasNavbarDropdown-expand-${expand}`}
-                  >
-                    <NavDropdown.Item href="#action3">내 그룹</NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
-                      회원정보 수정
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action5">
-                      Something else here
-                    </NavDropdown.Item>
-                  </NavDropdown>
-                </Nav>
-                <Form className="d-flex">
-                  <Form.Control
-                    type="search"
-                    placeholder="Search"
-                    className="me-2"
-                    aria-label="Search"
-                  />
-                  <Button variant="outline-success">Search</Button>
-                </Form>
-              </Offcanvas.Body>
-            </Navbar.Offcanvas>
-          </Container>
-        </Navbar>
-      ))}
+      <div className="navbar bg-base-100">
+        <div className="navbar-start">
+          <div className="dropdown">
+            <label tabIndex={0} className="btn btn-ghost btn-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+            </label>
+            <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Homepage</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>About</a></li>
+            </ul>
+          </div>
+        </div>
+        <div className="navbar-center">
+          <Link to="/" className="btn btn-ghost normal-case text-xl">
+            <span style={{ fontFamily: 'NanumSquareNeo-Variable', color: '#364FC7' }}>멜로톡</span>
+          </Link>
+        </div>
+        <div className="navbar-end">
+          <button className="btn btn-ghost btn-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+          </button>
+          <button className="btn btn-ghost btn-circle">
+            <div className="indicator">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /></svg>
+              <span className="badge badge-xs badge-primary indicator-item"></span>
+            </div>
+          </button>
+        </div>
+      </div>
     </>
   );
 }
