@@ -15,7 +15,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <BrowserRouter>
-    <div className="h-screen bg-inherit dark:bg-slate-900">
+    <div className="h-screen bg-inherit dark:bg-gray-900">
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />

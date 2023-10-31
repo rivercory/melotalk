@@ -3,7 +3,7 @@ import React from "react";
 function footer() {
     return (
         <>
-            <footer class="footer p-10 bg-base-200 text-base-content">
+            <footer class="footer p-10 bg-base-200 dark:bg-gray-800 dark:text-white text-base-content">
                 <nav>
                     <header class="footer-title">Services</header>
                     <a class="link link-hover">Branding</a>
@@ -25,7 +25,7 @@ function footer() {
                     <a class="link link-hover">Cookie policy</a>
                 </nav>
             </footer>
-            <footer class="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300">
+            <footer class="footer px-10 py-4 bg-base-200 dark:bg-gray-800 dark:text-white text-base-content">
                 <aside class="items-center grid-flow-col">
                     <img src="icons/melotalk_transparent.svg" width="48" height="48" alt="melotalk logo" />
                     <p>Melotalk. <br /> © 2023 강현호 all rights reserved.</p>
