@@ -6,8 +6,10 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    require("daisyui"),
-    require("nightwind")
+    require("daisyui")
   ],
+  daisyui: {
+    themes: ["light", "dark"],
+  },
 }
 

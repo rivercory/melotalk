@@ -7,7 +7,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import NavBar from './components/navbar';
 import Footer from './components/footer'
 import Home from './page/home'
-import nightwind from "nightwind/helper";
 import { Helmet } from "react-helmet";
 import Group from './page/group';
 
@@ -18,7 +17,6 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
     <Helmet>
-      <script>{nightwind.init()}</script>
     </Helmet>
     <BrowserRouter>
       <ul className="menu bg-base-200 w-56 rounded-box" id='dochi_context_menu' style={{ display: 'none', position: 'absolute' }}>
