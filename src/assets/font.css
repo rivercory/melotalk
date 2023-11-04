@@ -171,7 +171,17 @@
 
 /* 엘리스디지털배움체 */
 .elicedigitalbaeum {
+  font-family: 'EliceDigitalBaeum-Bd', Arial;
+}
 
+/* 페이북 글꼴 */
+.paybooc {
+  font-family: 'paybooc-Bold', Arial;
+}
+
+/* 카페24 아네모네 에어 */
+.cafe24ohsquareair {
+  font-family: 'Cafe24Ohsquareair', Arial;
 }
 
 /* IBM Plex Sans */
