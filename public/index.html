@@ -12,27 +12,6 @@
 
 <body>
   <div id="root"></div>
-  <script>
-      function handleCreateContextMenu(event){
-        event.preventDefault();
-        const ctxMenu = document.getElementById('dochi_context_menu');
-
-        ctxMenu.style.display = 'block';
-        ctxMenu.style.top = event.pageY+'px';
-        ctxMenu.style.left = event.pageX+'px';
-      }
-      
-      function handleClearContextMenu(event){
-        const ctxMenu = document.getElementById('dochi_context_menu');
-        
-        ctxMenu.style.display = 'none';   
-        ctxMenu.style.top = null;
-        ctxMenu.style.left = null;
-      }
-      
-      document.addEventListener('contextmenu', handleCreateContextMenu, false);
-      document.addEventListener('click', handleClearContextMenu, false);
-  </script>
 </body>
 
 </html>
