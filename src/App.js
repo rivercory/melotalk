@@ -1,50 +1,60 @@
 import './App.css';
 import Home from './pages/Home';
-import { Route, Routes } from 'react-router-dom';
+import {Link, Route, Routes} from 'react-router-dom';
+import { HiMenu, HiOutlineSearch, HiOutlineInbox } from "react-icons/hi";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
+    var agent = navigator.userAgent.toLowerCase();
+
+    if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) ) {
+        console.log("ExplorerDetected");
+        window.close();
+    }
+
     return (
-        <>
-        <div className="navbar bg-base-100">
-            <div className="navbar-start">
-                <div className="dropdown">
-                    <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+        <div className="relative h-screen">
+            <div className="navbar bg-base-100">
+                <div className="navbar-start">
+                    <div className="dropdown">
+                        <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
+                            <HiMenu size={32} />
+                        </div>
+                        <ul className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 suit">
+                            <li className="menu-title">멜로톡</li>
+                            <li><Link to="/">홈</Link></li>
+                            <li><Link to="/dashboard">대시보드</Link></li>
+                            <li><a>About</a></li>
+                            <li className="menu-title">We are melotalk family</li>
+                            <li><a href="https://melotalk.vercel.app">멜로톡</a></li>
+                            <li><a href="https://teenagercode.vercel.app">틴에이저코드</a></li>
+                            <li><a href="https://devlist-five.vercel.app">데브리스트</a></li>
+                            <li><a href="https://governmentplus.vercel.app">정부플러스</a></li>
+                            <li><a href="https://toolking.vercel.app">툴킹</a></li>
+                        </ul>
                     </div>
-                    <ul className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 suit">
-                        <li className="menu-title">멜로톡</li>
-                        <li><a>Homepage</a></li>
-                        <li><a>Portfolio</a></li>
-                        <li><a>About</a></li>
-                        <li className="menu-title">We are melotalk family</li>
-                        <li><a href="https://melotalk.vercel.app">멜로톡</a></li>
-                        <li><a href="https://teenagercode.vercel.app">틴에이저코드</a></li>
-                        <li><a href="https://devlist-five.vercel.app">데브리스트</a></li>
-                        <li><a href="https://governmentplus.vercel.app">정부플러스</a></li>
-                        <li><a href="https://toolking.vercel.app">툴킹</a></li>
-                    </ul>
+                    <a className="btn btn-ghost text-2xl cafe24ohsquareair">
+                        <img src="./icons/melotalk_full.svg" width="26" height="26"/>
+                        멜로톡
+                    </a>
                 </div>
-                <a className="btn btn-ghost text-2xl cafe24ohsquareair">
-                    <img src="./icons/melotalk_full.svg" width="26" height="26" />
-                    멜로톡
-                </a>
+                <div className="navbar-end">
+                    <button className="btn btn-ghost btn-circle">
+                        <HiOutlineSearch size={32} />
+                    </button>
+                    <button className="btn btn-ghost btn-circle">
+                        <HiOutlineInbox size={32} />
+                    </button>
+                </div>
             </div>
-            <div className="navbar-end">
-                <button className="btn btn-ghost btn-circle">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-                </button>
-                <button className="btn btn-ghost btn-circle">
-                    <div className="indicator">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /></svg>
-                        <span className="badge badge-xs badge-primary indicator-item"></span>
-                    </div>
-                </button>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/dashboard" element={<Dashboard />} />
+            </Routes>
+            <div className="absolute bottom-0 right-0 m-4 p-2">
+                e
             </div>
         </div>
-        <Routes>
-            <Route path="/" element={<Home/>}/>
-        </Routes>
-        </>
     );
 }
 
