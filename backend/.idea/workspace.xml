@@ -5,86 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31df7af7-7bf6-4c55-8269-9457c2ca2bcd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/modules/melotalk.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/modules/melotalk.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/backend.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/frontend/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/frontend/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/frontend/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/frontend/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/frontend/public/icons/melotalk_full.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/frontend/public/icons/melotalk_icon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/frontend/public/icons/melotalk_round.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/frontend/public/icons/melotalk_transparent.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/frontend/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/frontend/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/frontend/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/frontend/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/frontend/src/icons/melotalk_full.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/frontend/src/icons/melotalk_icon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/frontend/src/icons/melotalk_round.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/frontend/src/icons/melotalk_transparent.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/frontend/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/frontend/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/frontend/src/pages/Dashboard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/frontend/src/pages/Home.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/frontend/src/reportWebVitals.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/frontend/src/setProxy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/frontend/tailwind.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/hyeonho64/melotalk/Controller/HelloWorldController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/hyeonho64/melotalk/MelotalkApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/asset-manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/icons/melotalk_full.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/icons/melotalk_icon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/icons/melotalk_round.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/icons/melotalk_transparent.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/static/css/main.150876f7.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/static/css/main.150876f7.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/static/css/main.37bc755f.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/static/css/main.37bc755f.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/static/css/main.3e26efd2.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/static/css/main.3e26efd2.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/static/css/main.8eeeb4ce.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/static/css/main.8eeeb4ce.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/static/css/main.b51bd234.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/static/css/main.b51bd234.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/static/js/787.22690bc2.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/static/js/787.22690bc2.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/static/js/main.222cd921.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/static/js/main.222cd921.js.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/static/js/main.222cd921.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/static/js/main.4eaa4b29.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/static/js/main.4eaa4b29.js.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/static/js/main.4eaa4b29.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/static/js/main.6ec591f2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/static/js/main.6ec591f2.js.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/static/js/main.6ec591f2.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/static/js/main.aa5d226c.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/static/js/main.aa5d226c.js.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/static/js/main.aa5d226c.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/static/js/main.d59c6a42.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/static/js/main.d59c6a42.js.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/static/js/main.d59c6a42.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/static/js/main.f53fcd13.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/static/js/main.f53fcd13.js.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/static/js/main.f53fcd13.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/test/java/com/hyeonho64/melotalk/MelotalkApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,6 +83,7 @@
       <workItem from="1702554436480" duration="1864000" />
       <workItem from="1702616600557" duration="1313000" />
       <workItem from="1702619281786" duration="857000" />
+      <workItem from="1702694999422" duration="205000" />
     </task>
     <servers />
   </component>
