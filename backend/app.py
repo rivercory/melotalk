@@ -16,13 +16,13 @@ def user():
     }
 
 
-@app.route('/test', methods=['GET'])
-def test_get():
-    fruit_list = list(db.users.find({}))
-    for i in fruit_list:
+@app.route('/api/users', methods=['GET'])
+def get_users():
+    users = list(db.users.find({}))
+    for i in users:
         i['_id'] = str(i['_id'])
 
-    return jsonify({'result': 'success', 'articles': fruit_list})
+    return jsonify({'users': users})
 
 if __name__ == '__main__':
     app.run()
